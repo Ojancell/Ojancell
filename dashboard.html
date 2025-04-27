@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard - Orderkuota Web Report</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<div class="sidebar" id="sidebar">
+  <div class="toggle-btn" onclick="toggleSidebar()">
+    <i class="fas fa-bars"></i>
+  </div>
+  <div class="profile">
+    <img src="https://via.placeholder.com/50" alt="Profile Picture">
+    <h3>FAUZAN21</h3>
+  </div>
+  <ul class="menu">
+    <li><a href="#" onclick="showContent('dashboard')"><i class="fas fa-chart-bar"></i><span>Dashboard</span></a></li>
+    <li class="section">Harga</li>
+    <li><a href="#" onclick="showContent('harga')"><i class="fas fa-dollar-sign"></i><span>Daftar Harga</span></a></li>
+    <li class="section">Downline</li>
+    <li><a href="#" onclick="showContent('downline')"><i class="fas fa-network-wired"></i><span>List Downline</span></a></li>
+    <li class="section">History</li>
+    <li><a href="#" onclick="showContent('transaksi')"><i class="fas fa-shopping-cart"></i><span>Transaksi</span></a></li>
+    <li><a href="#" onclick="showContent('deposit')"><i class="fas fa-wallet"></i><span>Deposit</span></a></li>
+    <li><a href="#" onclick="showContent('mutasi')"><i class="fas fa-dollar-sign"></i><span>Mutasi Saldo</span></a></li>
+    <li><a href="#" onclick="showContent('qris')"><i class="fas fa-file-invoice-dollar"></i><span>Mutasi QRIS</span></a></li>
+    <li class="section">Logout</li>
+    <li><a href="index.html"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a></li>
+  </ul>
+</div>
+
+<div class="main-content" id="mainContent">
+  <h1>Selamat Datang di Dashboard</h1>
+  <p>Pilih menu di samping untuk mulai.</p>
+</div>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>
