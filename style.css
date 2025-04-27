@@ -1,4 +1,5 @@
 
+/* Style login page */
 * {
   margin: 0;
   padding: 0;
@@ -14,22 +15,10 @@ body {
 }
 .login-container {
   background-color: #1c1c1c;
-  padding: 30px 25px;
+  padding: 30px;
   border-radius: 10px;
-  width: 100%;
-  max-width: 350px;
-  box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
-  color: #fff;
-  animation: fadeIn 1s ease-in-out;
-}
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-.login-container h2 {
-  text-align: center;
-  margin-bottom: 25px;
-  font-size: 24px;
+  width: 300px;
+  color: white;
 }
 .input-group {
   position: relative;
@@ -41,7 +30,6 @@ body {
   left: 10px;
   transform: translateY(-50%);
   color: #aaa;
-  transition: color 0.3s;
 }
 .input-group input {
   width: 100%;
@@ -50,62 +38,29 @@ body {
   border: none;
   border-radius: 5px;
   color: white;
-  font-size: 14px;
-  transition: background 0.3s;
-}
-.input-group input:focus {
-  background: #444;
-}
-.input-group input:focus + i {
-  color: #00BCD4;
 }
 .checkbox-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
-  font-size: 13px;
+  margin: 10px 0;
 }
-.checkbox-container label {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-.checkbox-container a {
-  color: #00BCD4;
-  text-decoration: none;
-  font-size: 13px;
-}
-.login-container button {
+button {
   width: 100%;
   background-color: #4CAF50;
   color: white;
   padding: 10px;
-  margin-top: 20px;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-  transition: background 0.3s;
 }
-.login-container button:disabled {
-  background-color: #388E3C;
-}
-.login-container button:hover {
-  background-color: #45A049;
+button:hover {
+  background-color: #45a049;
 }
 .google-login {
-  margin-top: 15px;
+  margin-top: 10px;
   text-align: center;
   color: #00BCD4;
   cursor: pointer;
-  font-size: 14px;
-}
-.google-login:hover {
-  text-decoration: underline;
-}
-@media (max-width: 400px) {
-  .login-container {
-    margin: 0 15px;
-  }
 }
