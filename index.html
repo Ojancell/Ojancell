@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Web Report</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="login-container">
+  <h2>Login Web Report</h2>
+  <form id="loginForm">
+    <div class="input-group">
+      <i class="fas fa-user"></i>
+      <input type="email" id="email" placeholder="Email Terdaftar" required>
+    </div>
+    <div class="input-group">
+      <i class="fas fa-lock"></i>
+      <input type="password" id="password" placeholder="Password Akun" required>
+    </div>
+
+    <div class="checkbox-container">
+      <label><input type="checkbox"> Ingat Sandi</label>
+      <a href="#">Lupa Sandi?</a>
+    </div>
+
+    <button type="submit" id="loginButton">Masuk</button>
+
+    <div class="google-login">
+      Login dengan Google
+    </div>
+  </form>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
